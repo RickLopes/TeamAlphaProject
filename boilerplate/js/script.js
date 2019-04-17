@@ -1,0 +1,42 @@
+var API_URL_CUSTOMER = "http://localhost:8080/javabank5/api/customer";
+var API_URL_CUSTOMER = "http://localhost:8080/javabank5/api/customer/";
+var API_URL_CUSTOMER = "http://localhost:8080/javabank5/api/customer";
+
+// add an animal
+function addAnimal() {
+  $.ajax({
+      url: API_URL,
+      type: "POST",
+      data: JSON.stringify({
+          firstName: $("#first").val(),
+          lastName: $("#last").val(),
+          email: $("#email").val(),
+          phone: $("#phone").val()
+      }),
+      async: true,
+      contentType: "application/json",
+      success: fetchCustomers,
+      error: errorCallback
+  });
+};
+
+var populateWithAnimals = function(json) {
+  var animalsDiv = document.getElementById("animalContainer");
+
+  json.forEach(function(element) {
+    var htmlString =
+      '<div class="col-md-4 mb-5">' +
+      ' <div class="card h-100"> ' +
+      '   <img class="card-img-top" src="http://placehold.it/300x200" alt="">' +
+      '   <div class="card-body">' +
+      '     <h4 class="card-title">'+ element.+'</h4>' +
+      '     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>' +
+      '   </div>' +
+      '   <div class="card-footer">' +
+      '     <a href="#" class="btn btn-primary">Find Out More!</a>' +
+      '   </div>' +
+      ' </div>' +
+      '</div>';
+    animalsDiv.appendTo(htmlString);
+    });
+}
