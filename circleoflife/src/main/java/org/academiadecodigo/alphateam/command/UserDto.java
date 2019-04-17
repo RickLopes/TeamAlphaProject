@@ -1,5 +1,6 @@
 package org.academiadecodigo.alphateam.command;
 
+import org.academiadecodigo.alphateam.model.animal.SizeAnimal;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -9,31 +10,25 @@ public class UserDto {
 
     private Integer id;
 
-    @NotNull(message = "First name is mandatory")
-    @NotBlank(message = "First name is mandatory")
+    @NotNull(message = "Name is mandatory")
+    @NotBlank(message = "Name is mandatory")
     @Size(min = 2, max = 64)
-    private String firstName;
+    private String name;
 
-    @NotNull(message = "Last name is mandatory")
-    @NotBlank(message = "Last name is mandatory")
-    @Size(min = 2, max = 64)
-    private String lastName;
+    @NotNull(message = "Birthdate is mandatory")
+    @NotBlank(message = "Birthdate is mandatory")
+    private String birthdate;
 
-    @NotNull(message = "Email is mandatory")
-    @NotBlank(message = "Email is mandatory")
-    private String email;
+    @NotBlank(message = "Birthdate is mandatory")
+    private SizeAnimal size;
 
-    @NotNull(message = "Phone is mandatory")
-    @NotBlank(message = "Phone is mandatory")
-    private String phone;
+    @NotNull(message = "Color is mandatory")
+    @NotBlank(message = "Color is mandatory")
+    private String color;
 
-    @NotNull(message = "Password is mandatory")
-    @NotBlank(message = "Password is mandatory")
-    private String password;
-
-    @NotNull(message = "Pass confirm is mandatory")
-    @NotBlank(message = "Pass confirm is mandatory")
-    private String passConfirm;
+    @NotNull(message = "Weigth is mandatory")
+    @NotBlank(message = "Weigth is mandatory")
+    private double weigth;
 
     public Integer getId() {
         return id;
@@ -43,64 +38,55 @@ public class UserDto {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getBirthdate() {
+        return birthdate;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
     }
 
-    public String getEmail() {
-        return email;
+    public SizeAnimal getSize() {
+        return size;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setSize(SizeAnimal size) {
+        this.size = size;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getColor() {
+        return color;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public String getPassword() {
-        return password;
+    public double getWeigth() {
+        return weigth;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getPassConfirm() {
-        return passConfirm;
-    }
-
-    public void setPassConfirm(String passConfirm) {
-        this.passConfirm = passConfirm;
+    public void setWeigth(double weigth) {
+        this.weigth = weigth;
     }
 
     @Override
     public String toString() {
         return "UserDto{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", email='" + email + '\'' +
-                ", phone='" + phone + '\'' +
-                ", password='" + password + '\'' +
-                ", passConfirm='" + passConfirm + '\'' +
+                ", name='" + name + '\'' +
+                ", birthdate='" + birthdate + '\'' +
+                ", size=" + size +
+                ", color='" + color + '\'' +
+                ", weigth=" + weigth +
                 '}';
     }
 }
