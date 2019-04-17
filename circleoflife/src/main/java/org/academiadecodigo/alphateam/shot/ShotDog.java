@@ -1,4 +1,4 @@
 package org.academiadecodigo.alphateam.shot;
 
-public abstract class Shot {
+public class ShotDog extends Shot {
 }
