@@ -109,4 +109,9 @@ public class User implements Model {
                 ", animals=" + animals +
                 '}';
     }
+
+    public List<Animal> getAnimals() {
+        return animals;
+    }
+
 }

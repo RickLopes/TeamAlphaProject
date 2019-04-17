@@ -3,7 +3,7 @@ package org.academiadecodigo.alphateam.command;
 import org.academiadecodigo.alphateam.model.User;
 
 
-public class AnimalDTO {
+public class AnimalDto {
 
 
     private Integer id;
