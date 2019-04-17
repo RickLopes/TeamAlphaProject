@@ -5,10 +5,8 @@ import org.academiadecodigo.alphateam.model.User;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 
 @Entity
-@Table(name = "animal")
 public class Cat extends Animal {
 
     private String name;
