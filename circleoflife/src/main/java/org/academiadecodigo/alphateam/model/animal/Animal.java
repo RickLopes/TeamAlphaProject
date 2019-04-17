@@ -34,6 +34,7 @@ public abstract class Animal implements Model {
     
     // do relashionships
 
+    public abstract AnimalType getAnimalType();
 
     public Integer getId() {
         return id;
