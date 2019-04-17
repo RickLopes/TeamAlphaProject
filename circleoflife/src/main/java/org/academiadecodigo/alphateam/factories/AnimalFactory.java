@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AnimalFactory {
 
-    public Animal createAccount(AnimalType animalType) {
+    public Animal createAnimal(AnimalType animalType) {
 
         Animal newAnimal;
 
