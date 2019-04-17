@@ -1,4 +1,4 @@
-package org.academiadecodigo.alphateam.model;
+package org.academiadecodigo.alphateam.model.animal;
 
 import javax.persistence.*;
 

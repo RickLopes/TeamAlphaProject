@@ -1,6 +1,6 @@
-package org.academiadecodigo.alphateam;
+package org.academiadecodigo.alphateam.model;
 
-import org.academiadecodigo.alphateam.model.Animal;
+import org.academiadecodigo.alphateam.model.animal.Animal;
 
 import javax.persistence.*;
 import java.util.ArrayList;

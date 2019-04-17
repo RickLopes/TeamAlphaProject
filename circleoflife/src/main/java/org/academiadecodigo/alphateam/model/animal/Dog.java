@@ -1,6 +1,6 @@
-package org.academiadecodigo.alphateam.model;
+package org.academiadecodigo.alphateam.model.animal;
 
-import org.academiadecodigo.alphateam.User;
+import org.academiadecodigo.alphateam.model.User;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;

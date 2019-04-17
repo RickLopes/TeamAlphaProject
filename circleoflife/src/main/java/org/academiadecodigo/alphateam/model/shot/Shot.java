@@ -1,6 +1,4 @@
-package org.academiadecodigo.alphateam.shot;
-
-import org.academiadecodigo.alphateam.model.Animal;
+package org.academiadecodigo.alphateam.model.shot;
 
 import java.util.Date;
 
