@@ -15,6 +15,7 @@ public class Cat extends Animal {
     private String birthdate;
     private SizeAnimal size = SizeAnimal.SMALL;
     private String color;
+    private String breed;
     private double weigth;
      /*
     list shots cats

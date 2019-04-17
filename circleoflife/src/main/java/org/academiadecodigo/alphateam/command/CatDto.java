@@ -1,7 +1,5 @@
 package org.academiadecodigo.alphateam.command;
 
-import org.academiadecodigo.alphateam.animal.SizeAnimal;
-
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

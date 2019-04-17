@@ -35,7 +35,4 @@ public abstract class Animal {
         this.version = version;
     }
 
-    public int getAge() {
-        return 0;
-    }
 }
