@@ -1,6 +1,6 @@
 package org.academiadecodigo.alphateam.shot;
 
-import org.academiadecodigo.alphateam.animal.Animal;
+import org.academiadecodigo.alphateam.model.Animal;
 
 public class RabiesShot {
 
