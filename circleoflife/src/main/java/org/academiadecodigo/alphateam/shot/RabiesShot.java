@@ -2,40 +2,32 @@ package org.academiadecodigo.alphateam.shot;
 
 import org.academiadecodigo.alphateam.model.Animal;
 
+import java.util.Calendar;
+import java.util.Date;
+
 public class RabiesShot {
 
+    public boolean core = true;
+    private Date nextVaccine;
     private Animal pet;
-    public boolean Core = true;
-
-    public String lastVaccine;              //date
-    public String nextVaccineBaby;          //date
-    public String nextVaccineAdult;         //date
-
-
-    //dog - first and second year, then every three
-    //cat - 2 doses (12 months apart), then every 3
-
 
     public void setPet(Animal pet) {
         this.pet = pet;
     }
 
-    public String getLastVaccine() {
-        return lastVaccine;
-    }
-
-    public void setLastVaccine(String lastVaccine) {
-        this.lastVaccine = lastVaccine;
-    }
-
-    public String getNextVaccineBaby() {
-        return nextVaccineBaby;
-    }
-
-    public void setNextVaccineBaby(String lastVaccine) {
-        if (pet.getAge > 2)
-
+    public void setNextVaccine(Date lastVaccine) {
+        if (pet.getAge < 2) {
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(lastVaccine);
+            cal.add(Calendar.YEAR, 1);
+            nextVaccine = cal.getTime();
+        } else {
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(lastVaccine);
+            cal.add(Calendar.YEAR, 1);
+            nextVaccine = cal.getTime();
+        }
         this.nextVaccine = nextVaccine;
     }
-
+    
 }
