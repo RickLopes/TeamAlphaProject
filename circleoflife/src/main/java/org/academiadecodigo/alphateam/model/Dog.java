@@ -19,6 +19,21 @@ public class Dog extends Animal {
      /*
     list shots dogs
      */
+
+     //Core
+     private String rabiesDate;
+     private String distemperDate;
+     private String parvovirusDate;
+     private String adenovirusType1Date;
+     private String adenovirusType2Date;
+     private String parainfluenzaDate;
+
+     //non-Core
+     private String bordetellaDate;
+     private String lymeDateDate;
+     private String leptospirosisDate;
+     private String canineInfluenzaDate;
+
     @ManyToOne
     private User user;
 
