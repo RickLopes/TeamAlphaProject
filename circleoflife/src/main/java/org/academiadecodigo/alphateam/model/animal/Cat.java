@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "animal")
 public class Cat extends Animal {
 
     private String name;

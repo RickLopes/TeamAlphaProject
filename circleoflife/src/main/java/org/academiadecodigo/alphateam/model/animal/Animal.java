@@ -1,12 +1,18 @@
 package org.academiadecodigo.alphateam.model.animal;
 
+
 import org.academiadecodigo.alphateam.model.shot.Shot;
+
+import org.academiadecodigo.alphateam.model.User;
+
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@MappedSuperclass
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "animal")
 public abstract class Animal {
 
 
@@ -16,6 +22,10 @@ public abstract class Animal {
 
     @Version
     private Integer version;
+
+    @ManyToOne
+    private User user;
+
     /*
     shot  list
      */
