@@ -1,4 +1,6 @@
 package org.academiadecodigo.alphateam.dao;
 
-public interface UserDao {
+import org.academiadecodigo.alphateam.model.User;
+
+public interface UserDao extends Dao<User> {
 }
