@@ -162,7 +162,7 @@
 
   <build>
 
-    <finalName>Circle of Life</finalName>
+    <finalName>Alpha Pet Tracker</finalName>
 
     <plugins>
       <plugin>
