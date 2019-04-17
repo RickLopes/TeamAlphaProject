@@ -6,7 +6,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-public class UserDTO {
+public class UserDto {
 
     private Integer id;
 
@@ -80,7 +80,7 @@ public class UserDTO {
 
     @Override
     public String toString() {
-        return "UserDTO{" +
+        return "UserDto{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", birthdate='" + birthdate + '\'' +
