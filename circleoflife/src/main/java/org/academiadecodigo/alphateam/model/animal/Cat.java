@@ -18,6 +18,7 @@ public class Cat extends Animal {
     private SizeAnimal size = SizeAnimal.SMALL;
     private String color;
     private String breed;
+    private Boolean neutered;
     private double weigth;
 
      /*
@@ -128,5 +129,21 @@ public class Cat extends Animal {
 
     public void setBordetellaDate(String bordetellaDate) {
         this.bordetellaDate = bordetellaDate;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public Boolean getNeutered() {
+        return neutered;
+    }
+
+    public void setNeutered(Boolean neutered) {
+        this.neutered = neutered;
     }
 }

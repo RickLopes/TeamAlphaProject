@@ -14,6 +14,7 @@ public class Dog extends Animal {
     private SizeAnimal size;
     private String color;
     private String breed;
+    private Boolean neutered;
     private double weigth;
 
      /*
@@ -159,5 +160,21 @@ public class Dog extends Animal {
 
     public void setCanineInfluenzaDate(String canineInfluenzaDate) {
         this.canineInfluenzaDate = canineInfluenzaDate;
+    }
+
+    public String getBreed() {
+        return breed;
+    }
+
+    public void setBreed(String breed) {
+        this.breed = breed;
+    }
+
+    public Boolean getNeutered() {
+        return neutered;
+    }
+
+    public void setNeutered(Boolean neutered) {
+        this.neutered = neutered;
     }
 }
