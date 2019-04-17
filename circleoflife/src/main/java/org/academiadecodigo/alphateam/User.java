@@ -1,5 +1,7 @@
 package org.academiadecodigo.alphateam;
 
+import org.academiadecodigo.alphateam.model.Animal;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +19,7 @@ public class User {
     private String passConfirm;
 
     @OneToMany
-    private List<Animals> animals = new ArrayList<>();
+    private List<Animal> animals = new ArrayList<>();
 
 
     public Integer getId() {
