@@ -10,9 +10,6 @@ public abstract class Animal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private int age;
-
-
     @Version
     private Integer version;
     /*
@@ -39,6 +36,6 @@ public abstract class Animal {
     }
 
     public int getAge() {
-        return age;
+        return 0;
     }
 }
