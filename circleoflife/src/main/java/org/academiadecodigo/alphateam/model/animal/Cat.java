@@ -1,14 +1,16 @@
-package org.academiadecodigo.alphateam.model;
+package org.academiadecodigo.alphateam.model.animal;
 
 
-import org.academiadecodigo.alphateam.User;
+import org.academiadecodigo.alphateam.model.User;
+import org.academiadecodigo.alphateam.model.shot.CatShots;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name = "animal")
 public class Cat extends Animal {
 
     private String name;
@@ -17,9 +19,11 @@ public class Cat extends Animal {
     private String color;
     private String breed;
     private double weigth;
+
      /*
     list shots cats
      */
+     private List<CatShots> catShots = new ArrayList<>();
 
      //Core
     private String rabiesDate;
