@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "customer")
+@Table(name = "animal")
 public class Cat extends Animal {
 
     private String name;
