@@ -1,6 +1,10 @@
 package org.academiadecodigo.alphateam.model.animal;
 
+import org.academiadecodigo.alphateam.model.shot.Shot;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @MappedSuperclass
 public abstract class Animal {
@@ -15,6 +19,7 @@ public abstract class Animal {
     /*
     shot  list
      */
+    private List<Shot> shots = new ArrayList<>();
     
     // do relashionships
 
