@@ -14,6 +14,7 @@ public class Dog extends Animal {
     private String birthdate;
     private SizeAnimal size;
     private String color;
+    private String breed;
     private double weigth;
 
      /*
@@ -81,4 +82,83 @@ public class Dog extends Animal {
         this.weigth = weigth;
     }
 
+    public String getRabiesDate() {
+        return rabiesDate;
+    }
+
+    public void setRabiesDate(String rabiesDate) {
+        this.rabiesDate = rabiesDate;
+    }
+
+    public String getDistemperDate() {
+        return distemperDate;
+    }
+
+    public void setDistemperDate(String distemperDate) {
+        this.distemperDate = distemperDate;
+    }
+
+    public String getParvovirusDate() {
+        return parvovirusDate;
+    }
+
+    public void setParvovirusDate(String parvovirusDate) {
+        this.parvovirusDate = parvovirusDate;
+    }
+
+    public String getAdenovirusType1Date() {
+        return adenovirusType1Date;
+    }
+
+    public void setAdenovirusType1Date(String adenovirusType1Date) {
+        this.adenovirusType1Date = adenovirusType1Date;
+    }
+
+    public String getAdenovirusType2Date() {
+        return adenovirusType2Date;
+    }
+
+    public void setAdenovirusType2Date(String adenovirusType2Date) {
+        this.adenovirusType2Date = adenovirusType2Date;
+    }
+
+    public String getParainfluenzaDate() {
+        return parainfluenzaDate;
+    }
+
+    public void setParainfluenzaDate(String parainfluenzaDate) {
+        this.parainfluenzaDate = parainfluenzaDate;
+    }
+
+    public String getBordetellaDate() {
+        return bordetellaDate;
+    }
+
+    public void setBordetellaDate(String bordetellaDate) {
+        this.bordetellaDate = bordetellaDate;
+    }
+
+    public String getLymeDateDate() {
+        return lymeDateDate;
+    }
+
+    public void setLymeDateDate(String lymeDateDate) {
+        this.lymeDateDate = lymeDateDate;
+    }
+
+    public String getLeptospirosisDate() {
+        return leptospirosisDate;
+    }
+
+    public void setLeptospirosisDate(String leptospirosisDate) {
+        this.leptospirosisDate = leptospirosisDate;
+    }
+
+    public String getCanineInfluenzaDate() {
+        return canineInfluenzaDate;
+    }
+
+    public void setCanineInfluenzaDate(String canineInfluenzaDate) {
+        this.canineInfluenzaDate = canineInfluenzaDate;
+    }
 }
