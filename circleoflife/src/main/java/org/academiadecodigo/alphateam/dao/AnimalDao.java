@@ -1,4 +1,6 @@
 package org.academiadecodigo.alphateam.dao;
 
-public interface AnimalDao {
+import org.academiadecodigo.alphateam.model.animal.Animal;
+
+public interface AnimalDao extends Dao<Animal> {
 }
