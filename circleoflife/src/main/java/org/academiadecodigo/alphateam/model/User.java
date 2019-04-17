@@ -1,13 +1,14 @@
 package org.academiadecodigo.alphateam.model;
 
 import org.academiadecodigo.alphateam.model.animal.Animal;
+import org.springframework.ui.Model;
 
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class User {
+public class User implements Model {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

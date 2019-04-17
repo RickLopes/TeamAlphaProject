@@ -4,6 +4,7 @@ package org.academiadecodigo.alphateam.model.animal;
 import org.academiadecodigo.alphateam.model.shot.Shot;
 
 import org.academiadecodigo.alphateam.model.User;
+import org.springframework.ui.Model;
 
 
 import javax.persistence.*;
@@ -13,7 +14,7 @@ import java.util.List;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "animal")
-public abstract class Animal {
+public abstract class Animal implements Model {
 
 
     @Id
