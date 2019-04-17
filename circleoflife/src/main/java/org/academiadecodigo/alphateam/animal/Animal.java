@@ -1,17 +1,13 @@
-package org.academiadecodigo.alphateam.model;
+package org.academiadecodigo.alphateam.animal;
 
 import javax.persistence.*;
 
 @MappedSuperclass
 public abstract class Animal {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    private int age;
-
 
     @Version
     private Integer version;
@@ -36,9 +32,5 @@ public abstract class Animal {
 
     public void setVersion(Integer version) {
         this.version = version;
-    }
-
-    public int getAge() {
-        return age;
     }
 }
