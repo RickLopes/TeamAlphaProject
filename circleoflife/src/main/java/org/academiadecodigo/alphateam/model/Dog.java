@@ -17,9 +17,8 @@ public class Dog extends Animal {
     private double weigth;
 
      /*
-    list shots cats
+    list shots dogs
      */
-
     @ManyToOne
     private User user;
 
