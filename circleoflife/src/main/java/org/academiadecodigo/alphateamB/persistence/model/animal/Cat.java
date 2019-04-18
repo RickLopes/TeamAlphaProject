@@ -35,8 +35,6 @@ public class Cat extends Animal {
     private String felineLeukemiaVirusDate;
     private String bordetellaDate;
 
-    @ManyToOne
-    private User user;
 
      /*
      do realashionships

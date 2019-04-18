@@ -1,9 +1,12 @@
 package org.academiadecodigo.alphateamB.command;
 
+import org.springframework.stereotype.Component;
+
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
+@Component
 public class UserDto {
 
     private Integer id;
@@ -17,6 +20,7 @@ public class UserDto {
     @NotBlank(message = "Last Name is mandatory")
     private String lastName;
 
+    @Email
     @NotBlank(message = "email is mandatory")
     private String email;
 

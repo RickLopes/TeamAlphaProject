@@ -34,8 +34,6 @@ public class Dog extends Animal {
      private String leptospirosisDate;
      private String canineInfluenzaDate;
 
-    @ManyToOne
-    private User user;
 
      /*
      do realashionships
