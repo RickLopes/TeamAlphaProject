@@ -3,6 +3,8 @@ package org.academiadecodigo.alphateamB.controllers;
 import org.academiadecodigo.alphateamB.command.AnimalDto;
 import org.academiadecodigo.alphateamB.converter.AnimalDtoToAnimal;
 import org.academiadecodigo.alphateamB.converter.AnimalToAnimalDto;
+import org.academiadecodigo.alphateamB.exceptions.AnimalNotFoundException;
+import org.academiadecodigo.alphateamB.exceptions.UserNotFoundException;
 import org.academiadecodigo.alphateamB.persistence.model.User;
 import org.academiadecodigo.alphateamB.persistence.model.animal.Animal;
 import org.academiadecodigo.alphateamB.service.AnimalService;
