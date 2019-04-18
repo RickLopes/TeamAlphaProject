@@ -1,7 +1,10 @@
 package org.academiadecodigo.alphateamB.controllers;
 
 import org.academiadecodigo.alphateamB.command.UserDto;
+import org.academiadecodigo.alphateamB.converter.UserDtoToUser;
+import org.academiadecodigo.alphateamB.converter.UserToUserDto;
 import org.academiadecodigo.alphateamB.persistence.model.User;
+import org.academiadecodigo.alphateamB.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -16,27 +19,27 @@ import java.util.List;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/customer")
+@RequestMapping("/api/user")
 public class RestUserController {
 
     private UserService userService;
     private UserDtoToUser userDtoToUser;
-    private USerToUserDto userToUserDto;
+    private UserToUserDto userToUserDto;
 
     @Autowired
-    public void setCustomerService(UserService userService) {
+    public void setUserService(UserService userService) {
         this.userService = userService;
     }
 
 
     @Autowired
-    public void setCustomerDtoToCustomer(UserDtoToUser userDtoToUser) {
+    public void setUserDtoToUser(UserDtoToUser userDtoToUser) {
         this.userDtoToUser = userDtoToUser;
     }
 
 
     @Autowired
-    public void setCustomerToCustomerDto(UserToUserDto userToUserDto) {
+    public void setUserToUserDto(UserToUserDto userToUserDto) {
         this.userToUserDto = userToUserDto;
     }
 
@@ -51,7 +54,7 @@ public class RestUserController {
 
 
     @RequestMapping(method = RequestMethod.GET, path = "/{id}")
-    public ResponseEntity<UserDto> showCustomer(@PathVariable Integer id) {
+    public ResponseEntity<UserDto> showUser(@PathVariable Integer id) {
 
         User user = userService.get(id);
 
@@ -85,7 +88,7 @@ public class RestUserController {
 
 
     @RequestMapping(method = RequestMethod.PUT, path = "/{id}")
-    public ResponseEntity<UserDto> editCustomer(@Valid @RequestBody UserDto userDto, BindingResult bindingResult, @PathVariable Integer id) {
+    public ResponseEntity<UserDto> editUser(@Valid @RequestBody UserDto userDto, BindingResult bindingResult, @PathVariable Integer id) {
 
         if (bindingResult.hasErrors()) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -107,7 +110,7 @@ public class RestUserController {
 
 
     @RequestMapping(method = RequestMethod.DELETE, path = "/{id}")
-    public ResponseEntity<UserDto> deleteCustomer(@PathVariable Integer id) {
+    public ResponseEntity<UserDto> deleteUser(@PathVariable Integer id) {
 
         try {
 

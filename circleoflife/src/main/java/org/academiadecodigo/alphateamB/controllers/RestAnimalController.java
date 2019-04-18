@@ -1,8 +1,12 @@
 package org.academiadecodigo.alphateamB.controllers;
 
 import org.academiadecodigo.alphateamB.command.AnimalDto;
+import org.academiadecodigo.alphateamB.converter.AnimalDtoToAnimal;
+import org.academiadecodigo.alphateamB.converter.AnimalToAnimalDto;
 import org.academiadecodigo.alphateamB.persistence.model.User;
 import org.academiadecodigo.alphateamB.persistence.model.animal.Animal;
+import org.academiadecodigo.alphateamB.service.AnimalService;
+import org.academiadecodigo.alphateamB.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -23,7 +27,7 @@ public class RestAnimalController {
 
     private UserService userService;
     private AnimalService animalService;
-    private AnimalToAnimalDTO animalToAnimalDto;
+    private AnimalToAnimalDto animalToAnimalDto;
     private AnimalDtoToAnimal animalDtoToAnimal;
 
     @Autowired
@@ -37,7 +41,7 @@ public class RestAnimalController {
     }
 
     @Autowired
-    public void setAnimalToAnimalDto(AnimalToAnimalDTO animalToAnimalDto) {
+    public void setAnimalToAnimalDto(AnimalToAnimalDto animalToAnimalDto) {
         this.animalToAnimalDto = animalToAnimalDto;
     }
 
