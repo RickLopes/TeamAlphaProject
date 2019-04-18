@@ -1,13 +1,12 @@
 package org.academiadecodigo.alphateamB.service;
 
-import org.academiadecodigo.alphateamB.persistence.AnimalDao;
-import org.academiadecodigo.alphateamB.persistence.UserDao;
-import org.academiadecodigo.alphateamB.persistence.model.User;
+import org.academiadecodigo.alphateamB.persistence.dao.AnimalDao;
+import org.academiadecodigo.alphateamB.persistence.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserServiceImpl {
+public class UserService {
 
     private UserDao userDao;
     private AnimalDao animalDao;
@@ -22,6 +21,5 @@ public class UserServiceImpl {
         this.animalDao = animalDao;
     }
 
-    public User get()
 
 }
