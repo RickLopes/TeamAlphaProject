@@ -1,15 +1,12 @@
 package org.academiadecodigo.alphateamB.controllers;
 
-import org.academiadecodigo.alphateam.command.AnimalDto;
-import org.academiadecodigo.alphateam.model.User;
-import org.academiadecodigo.alphateam.model.animal.Animal;
+import org.academiadecodigo.alphateamB.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/pet")
@@ -41,7 +38,7 @@ public class AnimalController {
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/{userId}/")
-    public ResponseEntity<List<AnimalDto>> listAnimals(@PathVariable Integer userId) {
+    public ResponseEntity<> listAnimals(@PathVariable Integer userId) {
 
         User user = userService.get(userId);
 
