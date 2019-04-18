@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class User implements Model {
+public class User extends AbstractModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,9 +19,25 @@ public class User implements Model {
     private String password;
 
 
-    @OneToMany
+    @OneToMany(
+
+            cascade = {CascadeType.ALL},
+
+            orphanRemoval = true,
+
+            mappedBy = "user",
+
+            fetch = FetchType.EAGER
+    )
     private List<Animal> animals = new ArrayList<>();
 
+    public List<Animal> getAnimals() {
+        return animals;
+    }
+
+    public void setAnimals(List<Animal> animals) {
+        this.animals = animals;
+    }
 
     public Integer getId() {
         return id;
@@ -70,4 +86,15 @@ public class User implements Model {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public void addAnimal(Animal animal) {
+        animals.add(animal);
+        animal.setUser(this);
+    }
+
+    public void removeAnimal(Animal animal) {
+        animals.remove(animal);
+        animal.setUser(null);
+    }
+
 }

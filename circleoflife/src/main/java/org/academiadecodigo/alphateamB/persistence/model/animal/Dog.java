@@ -176,4 +176,9 @@ public class Dog extends Animal {
     public void setNeutered(Boolean neutered) {
         this.neutered = neutered;
     }
+
+    @Override
+    public AnimalType getAnimalType() {
+        return AnimalType.DOG;
+    }
 }
