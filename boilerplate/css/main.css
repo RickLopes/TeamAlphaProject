@@ -103,7 +103,7 @@ textarea {
    ========================================================================== */
 
    #navbar {
-     background-color: #e1d6ba;
+     background-color: #EEE8D9;
      border-bottom:2px solid #83303f;
 
    }
@@ -113,10 +113,14 @@ textarea {
        color : #83303f;
    }
 
-   .navbar-light .navbar-nav .nav-link{
+   .navbar-light .navbar-nav .nav-link {
      color: #00000067;
+     font-size: 1.2rem;
    }
 
+   .card-title {
+    color: #995561;
+   }
 
 
    #logoNav {

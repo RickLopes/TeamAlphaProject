@@ -33,7 +33,7 @@ var populateWithAnimals = function(json) {
       '     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>' +
       '   </div>' +
       '   <div class="card-footer">' +
-      '     <a href="#" class="btn btn-primary">Find Out More!</a>' +
+'           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">'+ element.name +'</button>' +
       '   </div>' +
       ' </div>' +
       '</div>';
