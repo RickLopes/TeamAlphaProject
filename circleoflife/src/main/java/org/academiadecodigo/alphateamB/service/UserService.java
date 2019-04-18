@@ -1,5 +1,8 @@
 package org.academiadecodigo.alphateamB.service;
 
+import org.academiadecodigo.alphateamB.exceptions.AnimalNotFoundException;
+import org.academiadecodigo.alphateamB.exceptions.AssociationExistsException;
+import org.academiadecodigo.alphateamB.exceptions.UserNotFoundException;
 import org.academiadecodigo.alphateamB.persistence.dao.AnimalDao;
 import org.academiadecodigo.alphateamB.persistence.dao.UserDao;
 import org.academiadecodigo.alphateamB.persistence.model.User;
