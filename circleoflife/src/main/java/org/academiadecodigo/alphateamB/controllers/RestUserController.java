@@ -45,7 +45,7 @@ public class RestUserController {
 
 
     @RequestMapping(method = RequestMethod.GET, path = {"/", ""})
-    public ResponseEntity<List<UserDto>> listCustomers() {
+    public ResponseEntity<List<UserDto>> listUsers() {
 
         List<UserDto> userDtos = userToUserDto.convert(userService.list());
 
@@ -62,7 +62,7 @@ public class RestUserController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        return new ResponseEntity<>(userToUserDto.convert(customer), HttpStatus.OK);
+        return new ResponseEntity<>(userToUserDto.convert(user), HttpStatus.OK);
     }
 
 
