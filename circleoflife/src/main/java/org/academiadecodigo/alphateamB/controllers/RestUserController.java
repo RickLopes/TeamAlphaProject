@@ -3,6 +3,8 @@ package org.academiadecodigo.alphateamB.controllers;
 import org.academiadecodigo.alphateamB.command.UserDto;
 import org.academiadecodigo.alphateamB.converter.UserDtoToUser;
 import org.academiadecodigo.alphateamB.converter.UserToUserDto;
+import org.academiadecodigo.alphateamB.exceptions.AssociationExistsException;
+import org.academiadecodigo.alphateamB.exceptions.UserNotFoundException;
 import org.academiadecodigo.alphateamB.persistence.model.User;
 import org.academiadecodigo.alphateamB.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

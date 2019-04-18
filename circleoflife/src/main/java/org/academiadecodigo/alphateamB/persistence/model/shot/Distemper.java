@@ -14,7 +14,7 @@ public class Distemper {
     public void setPet(Animal pet) {
         this.pet = pet;
     }
-
+    /*
     public void setNextVaccine(Date lastVaccine) {
         if (pet.getAge < 2) {
             Calendar cal = Calendar.getInstance();
@@ -29,7 +29,7 @@ public class Distemper {
         }
         this.nextVaccine = nextVaccine;
     }
-
+    */
 
     /*
     Distemper

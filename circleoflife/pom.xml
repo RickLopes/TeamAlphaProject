@@ -182,7 +182,7 @@
         <configuration>
           <url>http://localhost:8080/manager/text</url>
           <server>tomcat</server>
-          <path>/</path>
+          <path>/animal</path>
         </configuration>
       </plugin>
 

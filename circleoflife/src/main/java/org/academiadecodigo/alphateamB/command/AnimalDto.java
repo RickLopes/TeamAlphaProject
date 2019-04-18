@@ -11,7 +11,7 @@ public class AnimalDto {
 
     private Integer id;
 
-    @NotNull(message = "AccountType is mandatory")
+    @NotNull(message = "AnimalType is mandatory")
     private AnimalType animalType;
 
     public Integer getId() {

@@ -3,6 +3,8 @@ package org.academiadecodigo.alphateamB.controllers;
 import org.academiadecodigo.alphateamB.command.AnimalDto;
 import org.academiadecodigo.alphateamB.converter.AnimalDtoToAnimal;
 import org.academiadecodigo.alphateamB.converter.AnimalToAnimalDto;
+import org.academiadecodigo.alphateamB.exceptions.AnimalNotFoundException;
+import org.academiadecodigo.alphateamB.exceptions.UserNotFoundException;
 import org.academiadecodigo.alphateamB.persistence.model.User;
 import org.academiadecodigo.alphateamB.persistence.model.animal.Animal;
 import org.academiadecodigo.alphateamB.service.AnimalService;
@@ -102,9 +104,9 @@ public class RestAnimalController {
 
             return new ResponseEntity<>(headers, HttpStatus.CREATED);
 
-        } catch (AnimalNotFoundException e) {
+        } catch (UserNotFoundException e) {
+            e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-
         }
 
     }
@@ -115,7 +117,7 @@ public class RestAnimalController {
 
         try {
 
-            animalService.closeAnimal(cid, aid);
+            userService.closeAnimal(cid, aid);
 
             return new ResponseEntity<>(HttpStatus.OK);
 

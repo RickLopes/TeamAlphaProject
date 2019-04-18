@@ -34,8 +34,6 @@ public class Dog extends Animal {
      private String leptospirosisDate;
      private String canineInfluenzaDate;
 
-    @ManyToOne
-    private User user;
 
      /*
      do realashionships
@@ -175,5 +173,10 @@ public class Dog extends Animal {
 
     public void setNeutered(Boolean neutered) {
         this.neutered = neutered;
+    }
+
+    @Override
+    public AnimalType getAnimalType() {
+        return AnimalType.DOG;
     }
 }

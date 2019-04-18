@@ -35,8 +35,6 @@ public class Cat extends Animal {
     private String felineLeukemiaVirusDate;
     private String bordetellaDate;
 
-    @ManyToOne
-    private User user;
 
      /*
      do realashionships
@@ -144,5 +142,10 @@ public class Cat extends Animal {
 
     public void setNeutered(Boolean neutered) {
         this.neutered = neutered;
+    }
+
+    @Override
+    public AnimalType getAnimalType() {
+        return AnimalType.CAT;
     }
 }
