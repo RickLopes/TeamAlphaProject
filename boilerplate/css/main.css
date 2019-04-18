@@ -1,12 +1,13 @@
 ::-moz-selection {
-    background-color: #6cbb23;
+    background-color: #995561;
     color: #fff
 }
 
 ::selection {
-    background-color: #6cbb23;
+    background-color: #995561;
     color: #fff
 }
+
 
 ::-webkit-input-placeholder {
     color: #000;
@@ -1851,12 +1852,12 @@ h6 {
 }
 
 .form-select .nice-select .list .option.selected {
-    color: #6cbb23;
+    color: #83303f;
     background: transparent
 }
 
 .form-select .nice-select .list .option:hover {
-    color: #6cbb23;
+    color: #83303f;
     background: transparent
 }
 
@@ -1892,7 +1893,7 @@ body {
 }
 
 .menu-bar a {
-    color: #6cbb23
+    color: #995561
 }
 
 @media (max-width: 767px) {
@@ -1927,7 +1928,7 @@ nav {
         text-align: right;
         padding: 20px 0;
         z-index: 5;
-        background: #6cbb23
+        background: #83303f
     }
 }
 
@@ -1951,7 +1952,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #6cbb23
+    color: #83303f
 }
 
 body {
@@ -2169,8 +2170,8 @@ body {
     background: url(../img/video-bg.jpg) no-repeat center center/cover
 }
 
-.video-area .overlay-bg {
-    background: #995561
+.overlay-bg {
+    background: #B07B84
 }
 
 .video-area .video-content {
@@ -2234,9 +2235,7 @@ body {
     background: url(../img/video-bg.jpg) no-repeat center center/cover
 }
 
-.feature-area .overlay-bg {
-    background: rgba(108, 187, 35, 0.85)
-}
+
 
 .feature-area .icon {
     font-size: 100px;
@@ -2354,9 +2353,6 @@ body {
     color: #fff
 }
 
-.contact-area .overlay-bg {
-    background: rgba(108, 187, 35, 0.85)
-}
 
 .contact-area h2 {
     font-size: 36px;
