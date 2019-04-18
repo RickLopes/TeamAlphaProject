@@ -104,9 +104,9 @@ public class RestAnimalController {
 
             return new ResponseEntity<>(headers, HttpStatus.CREATED);
 
-        } catch (AnimalNotFoundException e) {
+        } catch (UserNotFoundException e) {
+            e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-
         }
 
     }
@@ -117,7 +117,7 @@ public class RestAnimalController {
 
         try {
 
-            animalService.closeAnimal(cid, aid);
+            userService.closeAnimal(cid, aid);
 
             return new ResponseEntity<>(HttpStatus.OK);
 

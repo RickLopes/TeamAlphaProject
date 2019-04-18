@@ -57,8 +57,12 @@ public class UserService {
         userDao.delete(id);
     }
 
+    public List<User> list() {
+        return userDao.findAll();
+    }
+
     @Transactional
-    public Animal addAccount(Integer id, Animal animal) throws UserNotFoundException {
+    public Animal addAnimal(Integer id, Animal animal) throws UserNotFoundException {
 
         User user = userDao.findById(id);
         if (user == null) {
