@@ -2173,6 +2173,9 @@ body {
 .overlay-bg {
     background: #B07B84
 }
+.overlay-white {
+  background: white
+}
 
 .video-area .video-content {
     text-align: center;
@@ -2240,7 +2243,7 @@ body {
 .feature-area .icon {
     font-size: 100px;
     color: #fff;
-    background: #f0f8e9;
+    background: #b07b7d63;
     text-align: center;
     padding: 50px;
     -webkit-transition: all 0.3s ease 0s;
@@ -2251,7 +2254,7 @@ body {
 
 .feature-area .icon:hover {
     color: #fff;
-    background-color: #6cbb23
+    background-color: #b07b7d63
 }
 
 .feature-area .icon:hover .lnr {
@@ -2259,7 +2262,7 @@ body {
 }
 
 .feature-area .lnr {
-    color: #6cbb23
+    color: #B07B84
 }
 
 .feature-area .desc {
@@ -2294,7 +2297,7 @@ body {
 .counter-left h2 {
     font-size: 48px;
     font-weight: 100;
-    color: #6cbb23
+    color: #B07B84
 }
 
 .counter-left p {
