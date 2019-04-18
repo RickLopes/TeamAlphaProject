@@ -2,6 +2,8 @@ var script = document.createElement('script');
 script.src = '//code.jquery.com/jquery-1.11.0.min.js';
 document.getElementsByTagName('head')[0].appendChild(script);
 
+var customers
+
 $(document).ready(function(){
 	"use strict";
 
@@ -9,8 +11,21 @@ $(document).ready(function(){
 	window_height 		 = window.innerHeight,
 	header_height 		 = $(".default-header").height(),
 	header_height_static = $(".site-header.static").outerHeight(),
-	fitscreen 			 = window_height - header_height;
+  fitscreen 			 = window_height - header_height;
 
+
+
+  $.ajax({
+    url: '', // form action url api usr
+    type: 'GET', // form submit method get/post
+
+    success: function (data) {
+      $('#userName').a
+    },
+    error: function (e) {
+      console.log(e)
+    }
+  });
 
 	$(".fullscreen").css("height", window_height)
 	$(".fitscreen").css("height", fitscreen);
@@ -47,6 +62,8 @@ $(document).ready(function(){
 
      $(document).ready(function() {
 
+
+    $('#userName').val()
 
        // Video lightbox
 
