@@ -1,9 +1,9 @@
 package org.academiadecodigo.alphateamB.factories;
 
-import org.academiadecodigo.alphateamB.model.animal.Animal;
-import org.academiadecodigo.alphateamB.model.animal.AnimalType;
-import org.academiadecodigo.alphateamB.model.animal.Cat;
-import org.academiadecodigo.alphateamB.model.animal.Dog;
+import org.academiadecodigo.alphateamB.persistence.model.animal.Animal;
+import org.academiadecodigo.alphateamB.persistence.model.animal.AnimalType;
+import org.academiadecodigo.alphateamB.persistence.model.animal.Cat;
+import org.academiadecodigo.alphateamB.persistence.model.animal.Dog;
 import org.springframework.stereotype.Component;
 
 @Component

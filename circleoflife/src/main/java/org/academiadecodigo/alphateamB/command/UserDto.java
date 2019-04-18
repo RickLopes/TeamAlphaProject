@@ -1,7 +1,5 @@
 package org.academiadecodigo.alphateamB.command;
 
-import org.academiadecodigo.alphateamB.model.animal.SizeAnimal;
-
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -10,25 +8,21 @@ public class UserDto {
 
     private Integer id;
 
-    @NotNull(message = "Name is mandatory")
-    @NotBlank(message = "Name is mandatory")
+    @NotNull(message = "First name is mandatory")
+    @NotBlank(message = "First name is mandatory")
     @Size(min = 2, max = 64)
-    private String name;
+    private String firstName;
 
-    @NotNull(message = "Birthdate is mandatory")
-    @NotBlank(message = "Birthdate is mandatory")
-    private String birthdate;
+    @NotNull(message = "Last Name is mandatory")
+    @NotBlank(message = "Last Name is mandatory")
+    private String lastName;
 
-    @NotBlank(message = "Birthdate is mandatory")
-    private SizeAnimal size;
+    @NotBlank(message = "email is mandatory")
+    private String email;
 
-    @NotNull(message = "Color is mandatory")
-    @NotBlank(message = "Color is mandatory")
-    private String color;
-
-    @NotNull(message = "Weigth is mandatory")
-    @NotBlank(message = "Weigth is mandatory")
-    private double weigth;
+    @NotNull(message = "Phone is mandatory")
+    @NotBlank(message = "Phone is mandatory")
+    private String phone;
 
     public Integer getId() {
         return id;
@@ -38,55 +32,35 @@ public class UserDto {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getBirthdate() {
-        return birthdate;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setBirthdate(String birthdate) {
-        this.birthdate = birthdate;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
-    public SizeAnimal getSize() {
-        return size;
+    public String getEmail() {
+        return email;
     }
 
-    public void setSize(SizeAnimal size) {
-        this.size = size;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getColor() {
-        return color;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public double getWeigth() {
-        return weigth;
-    }
-
-    public void setWeigth(double weigth) {
-        this.weigth = weigth;
-    }
-
-    @Override
-    public String toString() {
-        return "UserDto{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", birthdate='" + birthdate + '\'' +
-                ", size=" + size +
-                ", color='" + color + '\'' +
-                ", weigth=" + weigth +
-                '}';
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }
