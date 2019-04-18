@@ -55,6 +55,14 @@ body {
     max-width: 60%;
   }
 
+  #userImg {
+    display: inline-block;
+    max-width: 40%;
+  }
+  #catImg {
+    display: inline-block;
+    max-height: 20 px;
+  }
 ol,
 ul {
     margin: 0;
@@ -1797,12 +1805,12 @@ h6 {
 }
 
 .default-select .nice-select .list .option.selected {
-    color: #6cbb23;
+    color: #83303f;
     background: transparent
 }
 
 .default-select .nice-select .list .option:hover {
-    color: #6cbb23;
+    color: #83303f;
     background: transparent
 }
 
@@ -2042,11 +2050,11 @@ body {
 .primary-btn.white-bg {
     background: #fff;
     border: 1px solid #eee;
-    color: #6cbb23
+    color: #83303f
 }
 
 .primary-btn.white-bg span {
-    color: #6cbb23;
+    color: #83303f;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -2054,7 +2062,7 @@ body {
 }
 
 .primary-btn.white-bg:hover {
-    background: #6cbb23;
+    background: #83303f;
     color: #fff;
     border: 1px solid transparent
 }
@@ -2406,7 +2414,7 @@ body {
 }
 
 .common-input {
-    border: 1px solid #a6d477;
+    border: 1px solid #B07B84;
     line-height: 48px;
     width: 100%;
     display: block;
@@ -2416,12 +2424,12 @@ body {
 }
 
 .common-textarea {
-    border: 1px solid #a6d477;
+    border: 1px solid #B07B84;
     width: 100%;
     display: block;
     background: transparent;
     padding: 15px 25px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     height: 150px;
     resize: none
 }
@@ -2439,7 +2447,7 @@ footer .footer-nav li a {
 }
 
 footer .footer-nav li a:hover {
-    color: #6cbb23
+    color: #83303f
 }
 
 .single-footer-widget {
@@ -2460,15 +2468,15 @@ footer .footer-nav li a:hover {
 }
 
 .footer-bottom .footer-text i {
-    color: #6cbb23
+    color: #83303f
 }
 
 .footer-bottom .footer-text a {
-    color: #6cbb23
+    color: #83303f
 }
 
 .footer-bottom .footer-text a:hover {
-    color: #6cbb23
+    color: #683303f
 }
 
 @media (max-width: 767px) {
@@ -2499,7 +2507,7 @@ footer .footer-nav li a:hover {
 }
 
 .footer-social a:hover {
-    background: #6cbb23
+    background: #83303f
 }
 
 .footer-social a:hover i {

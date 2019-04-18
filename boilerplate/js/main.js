@@ -14,19 +14,6 @@ $(document).ready(function(){
   fitscreen 			 = window_height - header_height;
 
 
-
-  $.ajax({
-    url: '', // form action url api usr
-    type: 'GET', // form submit method get/post
-
-    success: function (data) {
-      $('#userName').a
-    },
-    error: function (e) {
-      console.log(e)
-    }
-  });
-
 	$(".fullscreen").css("height", window_height)
 	$(".fitscreen").css("height", fitscreen);
 
