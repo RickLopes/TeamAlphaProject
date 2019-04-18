@@ -14,7 +14,7 @@ public class RabiesShot {
     public void setPet(Animal pet) {
         this.pet = pet;
     }
-
+    /*
     public void setNextVaccine(Date lastVaccine) {
         if (pet.getAge < 2) {
             Calendar cal = Calendar.getInstance();
@@ -29,5 +29,5 @@ public class RabiesShot {
         }
         this.nextVaccine = nextVaccine;
     }
-    
+    */
 }

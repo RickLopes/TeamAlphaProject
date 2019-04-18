@@ -2,6 +2,7 @@ package org.academiadecodigo.alphateamB.converter;
 
 import org.academiadecodigo.alphateamB.command.UserDto;
 import org.academiadecodigo.alphateamB.persistence.model.User;
+import org.academiadecodigo.alphateamB.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 
@@ -36,7 +37,6 @@ public class UserDtoToUser implements Converter<UserDto, User> {
         user.setEmail(user.getEmail());
         user.setPhone(user.getPhone());
         user.setPassword(user.getPassword());
-        user.setPassConfirm(user.getPassConfirm());
 
         return user;
 
