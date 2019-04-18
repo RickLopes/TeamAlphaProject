@@ -50,19 +50,21 @@ body {
     max-width: 60%;
   }
 
-  #logoIni {
+#logoIni {
     display: block;
     max-width: 60%;
   }
 
-  #userImg {
+#userImg {
     display: inline-block;
     max-width: 40%;
   }
-  #catImg {
+
+#catImg {
     display: inline-block;
     max-height: 20 px;
   }
+
 ol,
 ul {
     margin: 0;
@@ -130,10 +132,11 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+span {
     font-family: "Poppins", sans-serif;
     color: #222;
-    line-height: 1.5em;
+    line-height: 1.3em;
     margin-bottom: 0;
     margin-top: 0;
     font-weight: 500
@@ -154,38 +157,42 @@ h6 {
 
 h1,
 .h1 {
-    font-size: 36px
+    font-size: 40px
 }
 
 h2,
 .h2 {
-    font-size: 30px
+    font-size: 34px
 }
 
 h3,
 .h3 {
-    font-size: 24px
+    font-size: 28px
 }
 
 h4,
 .h4 {
-    font-size: 18px
+    font-size: 22px
 }
 
 h5,
 .h5 {
-    font-size: 16px
+    font-size: 20px
 }
 
 h6,
 .h6 {
-    font-size: 14px;
+    font-size: 18px;
     color: #222
 }
 
 td,
 th {
     border-radius: 0px
+}
+
+#editable {
+    text-align: right;
 }
 
 .clear::before,
@@ -2559,3 +2566,36 @@ footer .footer-nav li a:hover {
 .elements-banner {
     color: #000 !important
 }
+
+.img-container{
+    position:relative;
+    display:inline-block;
+   }
+
+.img-container .overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#995561;
+    opacity:0;
+    transition:opacity 500ms ease-in-out;
+   }
+   
+.img-container:hover .overlay{
+    opacity:0.8;
+   }
+   
+.overlay span{
+    font-size: 18px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:#fff;
+}
+
+.img-container *{
+    border-radius: 3%
+  }

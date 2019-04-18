@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
+<html lang="EN" class="no-js">
 <head>
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Favicon-->
-	<link rel="shortcut icon" href="img/alpha_logo_beige.svg">
+	<link rel="shortcut icon" href="img/alpha_red.svg">
 	<!-- Author Meta -->
 	<meta name="author" content="Team Alpha">
 	<!-- Meta Description -->
@@ -15,6 +15,48 @@
 	<meta charset="UTF-8">
 	<!-- Site Title -->
 	<title>Alpha Pet</title>
+
+	<style>
+	.container {
+		position: relative;
+		width: 50%;
+	  }
+	  
+	  .image {
+		opacity: 1;
+		display: block;
+		width: 100%;
+		height: auto;
+		transition: .5s ease;
+		backface-visibility: hidden;
+	  }
+	  
+	  .middle {
+		transition: .5s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	  }
+	  
+	  .container:hover .image {
+		opacity: 0.3;
+	  }
+	  
+	  .container:hover .middle {
+		opacity: 1;
+	  }
+	  
+	  .text {
+		background-color:#995561;
+		color: white;
+		font-size: 16px;
+		padding: 16px 32px;
+	  }
+	  </style>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500" rel="stylesheet">
 		<!--
@@ -36,7 +78,7 @@
 				<div class="header-wrap">
 					<div class="header-top d-flex justify-content-between align-items-center">
 						<div class="logo">
-							<a href="index.html"><img class="card-img-top" src="img/alpha_logo_beige.svg" id="logoNav" alt=""></a>
+							<a href="index.html"><img class="card-img-top" src="img/alpha_red.svg" id="logoNav" alt=""></a>
 						</div>
 						<div class="main-menubar d-flex align-items-center">
 							<nav class="hide">
@@ -92,7 +134,7 @@
 		</section>
     <!-- End Team Force Area -->
     <!-- Start about Area -->
-		<section class="about-area pt-100 pb-100"id="owner">
+		<section class="about-area pt-100 pb-100" id="owner">
         <div class="overlay overlay-white"></div>
 
 			<div class="container">
@@ -116,13 +158,14 @@
                       <td>Phone: </td>
                       <td>+1-541-754-3010</td>
                   </tr>
-               </table>
-
+			   </table>
+			   <br>
+			   <quote style="font-size: 250%; margin-left: 100px;"><em>I have a great love of animals and laughter.</em></quote>
             </div>
 
 					</div>
 					<div class="col-lg-6">
-            <img class="d-flex mx-auto img-fluid" src="img/walt.png" alt="" id="userImg">
+            <img class="d-flex mx-auto img-fluid" src="img/walt.png" alt="" style="border-radius: 45%" id="userImg">
 
 					</div>
 				</div>
@@ -130,20 +173,30 @@
 		</section>
 		<!-- End Team Force Area -->
 		<!-- Start Feature Area -->
-		<section class="feature-area pt-100 pb-100  relative">
+		<section class="feature-area pt-100 pb-100  relative" id="pets">
 			<div class="overlay overlay-bg"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-6 d-flex align-items-stretch">
 						<div class="single-feature">
 							<div class="icon">
-								<span class="lnr lnr-cat">
-                  <img class="d-flex mx-auto img-fluid" src="img/simba.png" alt="" id="catImg">
-                </span>
+									<span class="lnr lnr-cat">
+											<div class="img-container">
+											  <img class="d-flex mx-auto img-fluid" src="img/simba.png" alt="" id="catImg">
+											  <div class="overlay">
+												<span> oioi </span>
+											  </div>
+											</div>
+										  </span>
+				
+				
 							</div>
 							<div class="desc">
 
                   <table id ="cat" >
+					  <tr>
+						<td colspan="2"><h2>Mandatory Vaccines:</h2></td>
+					</tr>
                       <tr>
                           <div class="row">
 
@@ -152,62 +205,101 @@
                         </div>
 
                         <div class="col-6 d-flex align-items-right">
-                          <td><span id="rabiesDate" class="editable">rabiesDate</span></td>
+                          <td align="right" width="300px"><span id="rabiesDate" class="editable">18/04/2019</span></td>
                         </div>
                       </div>
 
                         </tr>
                       <tr>
                           <td>Distemper: </td>
-                          <td><span id="distemperDate" class="editable">distemperDate</span></td>
+                          <td align="right"><span id="distemperDate" class="editable">18/04/2019</span></td>
                       </tr>
                       <tr>
                           <td>Herpevirus: </td>
-                          <td><span id="herpesvirusDate" class="editable">herpevirusDate</span></td>
+                          <td align="right"><span id="herpesvirusDate" class="editable">18/04/2019</span></td>
                       </tr>
                       <tr>
                           <td>Calicivirus: </td>
-                          <td><span id="calicivirusDate" class="editable">calicivirusDate</span></td>
+                          <td align="right"><span id="calicivirusDate" class="editable">18/04/2019</span></td>
                       </tr>
-                  </table>
+				  </table>
+				  <button class="primary-btn white-bg d-inline-flex align-items-center mt-20"><span class="mr-10" style="align: right;">Delete Pet</span><span class="lnr lnr-arrow-right"></span></button> <br>
 							</div>
 						</div>
 					</div>
 					<div class="col-6 d-flex align-items-stretch">
 						<div class="single-feature">
-							<div class="icon">
-								<span class="lnr">
-                  <img class="d-flex mx-auto img-fluid" src="img/pluto.png" alt="" id="dogImg">
-                </span>
+							
+									<div class="icon">
+											<span class="lnr">
+											  <div class="img-container">
+												<img class="d-flex mx-auto img-fluid" src="img/pluto.png" alt="" id="dogImg">
+												<div class="overlay">
+												  <span><table width="275px">
+													  <tr>
+														  <td style="text-align: left;">Name: </td>
+														  <td style="text-align: right;">Pluto</td>
+													  </tr>
+													  <tr>
+														  <td style="text-align: left;">Birthdate: </td>
+														<td style="text-align: right;">21/01/2019</td> 
+													</tr>
+													<tr>
+														<td style="text-align: left;">Color: </td>
+														<td style="text-align: right;">Yellow Orange</td>
+													</tr>
+													<tr>
+														<td style="text-align: left;">Breed: </td>
+														<td style="text-align: right;">Bull Mastiff</td>
+													</tr>
+													<tr>
+														<td style="text-align: left;">Neutered: </td>
+														<td style="text-align: right;">Yes</td>
+													</tr>
+													<tr>
+														<td style="text-align: left;">Weight: </td>
+														<td style="text-align: right;">45 Kg</td>
+													</tr>
+
+											</span>
+												  </table>
+												</div>
+											  </div>
+											</span>
+
 							</div>
 							<div class="desc">
                   <table id="dog">
+						<tr>
+								<td colspan="2"><h2>Mandatory Vaccines:</h2></td>
+							</tr>
                       <tr>
                           <td>Rabies: </td>
-                          <td><span id="rabiesDate" class="editable">rabiesDate</span></td>
+                          <td align="right" width="300px"><span id="rabiesDate" class="editable">18/04/2019</span></td>
                       </tr>
                       <tr>
                           <td>Distemper: </td>
-                          <td><span id="distemperDate" class="editable">distemperDate</span></td>
+                          <td align="right"><span id="distemperDate" class="editable">18/04/2019</span></td>
                       </tr>
                       <tr>
                           <td>Parvovirus: </td>
-                          <td><span id="parvovirusDate" class="editable">parvovirusDate</span></td>
+                          <td align="right"><span id="parvovirusDate" class="editable">18/04/2019</span></td>
                       </tr>
                       <tr>
                           <td>Adenovirus Type 1: </td>
-                          <td><span id="adenovirusType1Date" class="editable">adenovirusType1Date</span></td>
+                          <td align="right"><span id="adenovirusType1Date" class="editable">18/04/2019</span></td>
                       </tr>
                       <tr>
                           <td>Adenovirus Type 2: </td>
-                          <td><span id="adenovirusType2Date" class="editable">adenovirusType2Date</span></td>
+                          <td align="right"><span id="adenovirusType2Date" class="editable">18/04/2019</span></td>
                       </tr>
                       <tr>
                           <td>Parainfluenza: </td>
-                          <td><span id="parainfluenzaDate" class="editable">parainfluenzaDate</span></td>
+                          <td align="right"><span id="parainfluenzaDate" class="editable">18/04/2019</span></td>
                       </tr>
-                  </table>
-							</div>
+				  </table>
+				  <button class="primary-btn white-bg d-inline-flex align-items-center mt-20"><span class="mr-10">Delete Pet</span><span class="lnr lnr-arrow-right"></span></button> <br>		
+				</div>
 						</div>
 					</div>
 				</div>
