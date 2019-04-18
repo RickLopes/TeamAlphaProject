@@ -1,6 +1,7 @@
 package org.academiadecodigo.alphateamB.persistence.model.animal;
 
 
+import org.academiadecodigo.alphateamB.persistence.model.AbstractModel;
 import org.academiadecodigo.alphateamB.persistence.model.Model;
 import org.academiadecodigo.alphateamB.persistence.model.shot.Shot;
 
@@ -15,15 +16,7 @@ import java.util.List;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "animal")
-public abstract class Animal implements Model {
-
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-
-    @Version
-    private Integer version;
+public abstract class Animal extends AbstractModel {
 
     @ManyToOne
     private User user;
@@ -36,20 +29,21 @@ public abstract class Animal implements Model {
     // do relashionships
 
 
-    public Integer getId() {
-        return id;
+    public User getUser() {
+        return user;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setUser(User user) {
+        this.user = user;
     }
 
-    public Integer getVersion() {
-        return version;
+    public List<Shot> getShots() {
+        return shots;
     }
 
-    public void setVersion(Integer version) {
-        this.version = version;
+    public void setShots(List<Shot> shots) {
+        this.shots = shots;
     }
 
+    public abstract AnimalType getAnimalType();
 }
