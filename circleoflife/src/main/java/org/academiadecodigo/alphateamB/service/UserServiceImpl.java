@@ -1,8 +1,8 @@
 package org.academiadecodigo.alphateamB.service;
 
-import org.academiadecodigo.alphateamB.dao.AnimalDao;
-import org.academiadecodigo.alphateamB.dao.UserDao;
-import org.academiadecodigo.alphateamB.model.User;
+import org.academiadecodigo.alphateamB.persistence.AnimalDao;
+import org.academiadecodigo.alphateamB.persistence.UserDao;
+import org.academiadecodigo.alphateamB.persistence.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
