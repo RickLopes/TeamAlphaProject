@@ -2,10 +2,12 @@ package org.academiadecodigo.alphateamB.persistence.model.animal;
 
 import org.academiadecodigo.alphateamB.persistence.model.User;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 
 @Entity
+@DiscriminatorValue("dog")
 public class Dog extends Animal {
 
     private String name;
@@ -33,6 +35,7 @@ public class Dog extends Animal {
      private String lymeDateDate;
      private String leptospirosisDate;
      private String canineInfluenzaDate;
+
 
 
      /*

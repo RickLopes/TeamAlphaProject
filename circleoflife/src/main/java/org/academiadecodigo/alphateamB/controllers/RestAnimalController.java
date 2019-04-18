@@ -75,11 +75,11 @@ public class RestAnimalController {
 
         Animal animal = animalService.get(aid);
 
-        if (animal == null || animal.getUser() == null) {
+        if (animal == null || animal.getOwner() == null) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 
-        if (!animal.getUser().getId().equals(cid)) {
+        if (!animal.getOwner().getId().equals(cid)) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
 

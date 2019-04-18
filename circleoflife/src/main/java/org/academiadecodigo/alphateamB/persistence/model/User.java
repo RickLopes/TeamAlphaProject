@@ -8,13 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "user")
+@Table(name = "owner")
 public class User extends AbstractModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
     private String firstName;
     private String lastName;
     private String email;
@@ -28,7 +27,7 @@ public class User extends AbstractModel {
 
             orphanRemoval = true,
 
-            mappedBy = "user",
+            mappedBy = "owner",
 
             fetch = FetchType.EAGER
     )
@@ -40,16 +39,6 @@ public class User extends AbstractModel {
 
     public void setAnimals(List<Animal> animals) {
         this.animals = animals;
-    }
-
-    @Override
-    public Integer getId() {
-        return id;
-    }
-
-    @Override
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getFirstName() {
@@ -92,20 +81,29 @@ public class User extends AbstractModel {
         this.password = password;
     }
 
+    @Override
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public void addAnimal(Animal animal) {
         animals.add(animal);
-        animal.setUser(this);
+        animal.setOwner(this);
     }
 
     public void removeAnimal(Animal animal) {
         animals.remove(animal);
-        animal.setUser(null);
+        animal.setOwner(null);
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +

@@ -2,6 +2,7 @@ package org.academiadecodigo.alphateamB.command;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import org.academiadecodigo.alphateamB.persistence.model.animal.AnimalType;
+import org.springframework.stereotype.Component;
 
 import javax.validation.constraints.NotNull;
 

@@ -16,15 +16,11 @@
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/controllers/RestAnimalController.java
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/converter/AnimalToAnimalDto.java
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/persistence/dao/jpa/GenericJpaDao.java
-/Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateam/controller/ControllerOwner.java
-/Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateam/controller/ControllerAnimal.java
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/persistence/model/AbstractModel.java
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/controllers/RestIndexController.java
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/persistence/model/shot/RabiesShot.java
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/persistence/model/shot/DogShots.java
-/Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateam/model/Animal.java
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/errors/ErrorMessage.java
-/Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateam/model/Owner.java
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/converter/UserDtoToUser.java
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/persistence/dao/jpa/JpaUserDao.java
 /Users/codecadet/newrepos/Alpha/TeamAlphaProject/circleoflife/src/main/java/org/academiadecodigo/alphateamB/command/UserDto.java

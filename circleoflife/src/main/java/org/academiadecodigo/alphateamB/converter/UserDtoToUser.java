@@ -5,7 +5,9 @@ import org.academiadecodigo.alphateamB.persistence.model.User;
 import org.academiadecodigo.alphateamB.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserDtoToUser implements Converter<UserDto, User> {
 
     private UserService userService;
@@ -32,11 +34,10 @@ public class UserDtoToUser implements Converter<UserDto, User> {
 
         User user = (userDto.getId() != null ? userService.get(userDto.getId()) : new User());
 
-        user.setFirstName(user.getFirstName());
-        user.setLastName(user.getLastName());
-        user.setEmail(user.getEmail());
-        user.setPhone(user.getPhone());
-        user.setPassword(user.getPassword());
+        user.setFirstName(userDto.getFirstName());
+        user.setLastName(userDto.getLastName());
+        user.setEmail(userDto.getEmail());
+        user.setPhone(userDto.getPhone());
 
         return user;
 

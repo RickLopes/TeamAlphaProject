@@ -86,7 +86,7 @@ public class UserService {
             throw new UserNotFoundException();
         }
 
-        if (animal == null || !animal.getUser().getId().equals(id)) {
+        if (animal == null || !animal.getOwner().getId().equals(id)) {
             throw new AnimalNotFoundException();
         }
 

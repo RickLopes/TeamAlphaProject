@@ -21,7 +21,7 @@ import java.util.List;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping("/api/owner")
 public class RestUserController {
 
     private UserService userService;
@@ -78,7 +78,7 @@ public class RestUserController {
         User savedUser = userService.save(userDtoToUser.convert(userDto));
 
         // get help from the framework building the path for the newly created resource
-        UriComponents uriComponents = uriComponentsBuilder.path("/api/customer/" + savedUser.getId()).build();
+        UriComponents uriComponents = uriComponentsBuilder.path("/api/owner/" + savedUser.getId()).build();
 
 
         // set headers with the created path

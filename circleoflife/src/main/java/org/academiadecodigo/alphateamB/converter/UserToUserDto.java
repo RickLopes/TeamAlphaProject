@@ -2,7 +2,9 @@ package org.academiadecodigo.alphateamB.converter;
 
 import org.academiadecodigo.alphateamB.command.UserDto;
 import org.academiadecodigo.alphateamB.persistence.model.User;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserToUserDto extends AbstractConverter<User, UserDto> {
 
     /**

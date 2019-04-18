@@ -13,13 +13,13 @@ public abstract class GenericJpaDao <T extends Model> implements Dao<T> {
 
     protected Class<T> modelType;
 
-    @PersistenceContext
     protected EntityManager em;
 
     public GenericJpaDao(Class<T> modelType) {
         this.modelType = modelType;
     }
 
+    @PersistenceContext
     public void setEm(EntityManager em) {
         this.em = em;
     }
@@ -38,6 +38,8 @@ public abstract class GenericJpaDao <T extends Model> implements Dao<T> {
 
     @Override
     public T saveOrUpdate(T modelObject) {
+
+        System.out.println("HEEEEEEYYYYYYYY I'M IN THE SAVE 0R UPDATE!!!!! ");
         return em.merge(modelObject);
     }
 
@@ -45,6 +47,5 @@ public abstract class GenericJpaDao <T extends Model> implements Dao<T> {
     public void delete(Integer id) {
 
         em.remove(em.find(modelType, id));
-
     }
 }

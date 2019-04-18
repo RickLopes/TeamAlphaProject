@@ -2,7 +2,9 @@ package org.academiadecodigo.alphateamB.converter;
 
 import org.academiadecodigo.alphateamB.command.AnimalDto;
 import org.academiadecodigo.alphateamB.persistence.model.animal.Animal;
+import org.springframework.stereotype.Component;
 
+@Component
 public class AnimalToAnimalDto extends AbstractConverter<Animal, AnimalDto> {
 
     /**

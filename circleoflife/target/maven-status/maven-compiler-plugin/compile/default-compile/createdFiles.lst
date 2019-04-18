@@ -1,7 +1,6 @@
 org/academiadecodigo/alphateamB/persistence/model/animal/SizeAnimal.class
 org/academiadecodigo/alphateamB/service/UserService.class
 org/academiadecodigo/alphateamB/errors/ErrorMessage.class
-org/academiadecodigo/alphateam/model/Animal.class
 org/academiadecodigo/alphateamB/factories/AnimalFactory.class
 org/academiadecodigo/alphateamB/persistence/model/shot/RabiesShot.class
 org/academiadecodigo/alphateamB/controllers/RestIndexController$ApiVersion.class
@@ -11,10 +10,8 @@ org/academiadecodigo/alphateamB/persistence/dao/AnimalDao.class
 org/academiadecodigo/alphateamB/persistence/model/shot/Distemper.class
 org/academiadecodigo/alphateamB/controllers/RestIndexController.class
 org/academiadecodigo/alphateamB/command/UserDto.class
-org/academiadecodigo/alphateam/controller/ControllerOwner.class
 org/academiadecodigo/alphateamB/persistence/dao/UserDao.class
 org/academiadecodigo/alphateamB/persistence/model/shot/DogShots.class
-org/academiadecodigo/alphateam/controller/ControllerAnimal.class
 org/academiadecodigo/alphateamB/converter/UserDtoToUser.class
 org/academiadecodigo/alphateamB/converter/AnimalDtoToAnimal.class
 org/academiadecodigo/alphateamB/persistence/dao/Dao.class
@@ -30,7 +27,6 @@ org/academiadecodigo/alphateamB/exceptions/UserNotFoundException.class
 org/academiadecodigo/alphateamB/controllers/RestUserController.class
 org/academiadecodigo/alphateamB/persistence/model/animal/Animal.class
 org/academiadecodigo/alphateamB/command/AnimalDto.class
-org/academiadecodigo/alphateam/model/Owner.class
 org/academiadecodigo/alphateamB/persistence/model/User.class
 org/academiadecodigo/alphateamB/persistence/dao/jpa/JpaUserDao.class
 org/academiadecodigo/alphateamB/persistence/model/Model.class
